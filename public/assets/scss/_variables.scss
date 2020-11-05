@@ -1,0 +1,42 @@
+/* ================================================================
+   Variables
+   ================================================================ */
+
+// Color Variables
+$color-base: #4b4b4b; //Black
+$color-invert: #fff;
+$bg-color: #F2F4F6; //
+$color-primary: #6534FF; //violet
+$color-secondary: #F9879A; // rosa text
+$color-third: #52D2BD; // green
+$color-fourth:#FCCDD3; //rose
+
+// Typography  
+$font-family: 'Archivo', sans-serif;
+$font-family-narrow: 'Archivo Narrow', sans-serif;
+ 
+$fontWeight-normal: 400;
+$fontWeight-medium: 500;
+$fontWeight-bold: 700;
+$typography-margin-bottom: 1em; 
+ 
+
+// Breakpoints 
+// You can convert these at http://pxtoem.com 
+$bp-s: 20em; // 320px 
+$bp-s-max: 29.938em; // 479px
+$bp-sw: 30em; // 480px
+$bp-sw-max: 47.938em; // 767px
+$bp-m: 48em; // 768px  
+$bp-m-max: 59.938em; // 959px
+$bp-mw: 60em; // 960px
+$bp-mw-max: 71.188em; // 1139px 
+$bp-l: 71.25em; // 1140px
+$bp-l-max: 81.188em; // 1299px 
+$bp-xl: 81.25em; // 1300px  
+
+// Grid
+$grid-gutter: 16px;  
+$grid-gutter-em: 1em; // Changing grid gutter to em causes a compiling error :/
+
+

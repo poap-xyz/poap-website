@@ -1,0 +1,33 @@
+{
+  "description": "Part of the EthGlobal Community",
+  "external_url": "https://scan.poap.xyz/events/json/12.json",
+  "home_url": "https://scan.poap.xyz/events/json/12.json",
+  "image": "https://scan.poap.xyz/events/images/ethdenver2018_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/ethdenver2018_512.png",
+  "name": "ETHDenver",
+  "year": 2018,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2018-02-16"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2018-02-18"
+    },
+    {
+      "trait_type": "city",
+      "value": "Denver"
+    },
+    {
+      "trait_type": "country",
+      "value": "United States"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "http://2018.ethdenver.com/"
+    }
+  ],
+  "properties": []
+}

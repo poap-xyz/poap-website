@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "deploy": "firebase deploy",
+    "dev": "parcel public/index.html",
+    "build": "rm -rf dist; parcel build public/index.html; cp -R public/events dist/events"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "firebase-tools": "^6.9.2",
+    "jquery": "^3.4.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "name": "poap-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mariano Cortesi <mcortesi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.7"
+  }
+}

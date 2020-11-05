@@ -1,0 +1,33 @@
+{
+  "description": "A beatiful day at Casa Bonita to experience everything that Eric Cartman did in S07E11.",
+  "external_url": "https://scan.poap.xyz/events/json/22.json",
+  "home_url": "https://scan.poap.xyz/events/json/22.json",
+  "image": "https://scan.poap.xyz/events/images/bonita_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/bonita_512.png",
+  "name": "Casa Bonita",
+  "year": 2019,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2019-02-18"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2019-02-18"
+    },
+    {
+      "trait_type": "city",
+      "value": "Denver"
+    },
+    {
+      "trait_type": "country",
+      "value": "United States"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://kickback.events/event/0xaa836e1d006f91861e77dcaae4000d9a4aad544a"
+    }
+  ],
+  "properties": []
+}

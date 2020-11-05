@@ -1,0 +1,33 @@
+{
+  "description": "The Ethereum Developer Conference 1",
+  "external_url": "https://scan.poap.xyz/events/json/3.json",
+  "home_url": "https://scan.poap.xyz/events/json/3.json",
+  "image": "https://scan.poap.xyz/events/images/devcon1_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/devcon1_512.png",
+  "name": "DevCon1",
+  "year": 2015,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2015-11-09"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2015-11-13"
+    },
+    {
+      "trait_type": "city",
+      "value": "London"
+    },
+    {
+      "trait_type": "country",
+      "value": "United Kingdom"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://devcon.ethereum.org/"
+    }
+  ],
+  "properties": []
+}

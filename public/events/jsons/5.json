@@ -1,0 +1,33 @@
+{
+  "description": "The Ethereum Developer Conference 3",
+  "external_url": "https://scan.poap.xyz/events/json/5.json",
+  "home_url": "https://scan.poap.xyz/events/json/5.json",
+  "image": "https://scan.poap.xyz/events/images/devcon3_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/devcon3_512.png",
+  "name": "DevCon3",
+  "year": 2017,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2017-11-01"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2017-11-04"
+    },
+    {
+      "trait_type": "city",
+      "value": "Cancun"
+    },
+    {
+      "trait_type": "country",
+      "value": "Mexico"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://devcon.ethereum.org/"
+    }
+  ],
+  "properties": []
+}

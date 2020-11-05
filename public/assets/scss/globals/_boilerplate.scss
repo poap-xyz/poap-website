@@ -1,0 +1,315 @@
+/* ================================================================
+   Boilerplate - Base Styles 
+   ================================================================ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $color-base;
+}
+
+body {
+    font-family: $font-family;
+    background: $color-invert;
+    font-size:16px; 
+    overflow-x: hidden;
+}
+
+header, main, footer {
+    clear: both;
+}
+
+::-moz-selection {
+    background: $color-primary;
+    color: $color-invert;
+    text-shadow: none;
+}
+
+::selection {
+    background: $color-primary;
+    color: $color-invert;
+    text-shadow: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden,
+.visually-hidden,
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    position: static;
+    overflow: visible;
+    clip: auto;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+table {
+    margin: 1em 0;
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 0.2em 0.4em;
+    border: 1px solid #ccc;
+    background: hsl(0, 0%, 90%);
+}
+
+tr:nth-child(2n) td {
+    background: #fff;
+}
+
+/* ================================================================
+   Typography Styles
+   ================================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0 0 $typography-margin-bottom;
+    font-family: $font-family-narrow;
+}
+
+h1 {
+    @include x-rem(font-size, 40px);
+    color:$color-primary;
+
+    @media (min-width: $bp-mw) {
+        @include x-rem(font-size, 50px);
+    }
+
+}
+
+h2 {
+    @include x-rem(font-size, 40px);
+    color:$color-primary;
+    font-family: $font-family-narrow;
+    font-weight: $fontWeight-bold; 
+    margin-bottom: 24px;
+
+    @media (min-width: $bp-mw) {
+        @include x-rem(font-size, 50px);
+    }
+}
+
+h3 {
+    @include x-rem(font-size, 24px);
+    color:$color-primary;
+    font-family: $font-family-narrow;
+    font-weight: $fontWeight-normal;
+    margin-bottom:12px;
+
+    @media (min-width: $bp-mw) {
+        @include x-rem(font-size, 30px);
+    }
+}
+h4 {
+    @include x-rem(font-size, 16px);
+    color:$color-base;
+    font-family: $font-family;
+    font-weight: $fontWeight-bold;
+    margin:0; 
+    line-height: 20px;
+
+    @media (min-width: $bp-m) {
+        @include x-rem(font-size, 18px);
+        line-height: 24px;
+    }
+}
+
+h5 {
+    @include x-rem(font-size, 30px);
+    color: $color-base;
+    font-weight: $fontWeight-normal; 
+
+    @media (min-width: $bp-mw) {
+        @include x-rem(font-size, 40px);
+    }
+}
+
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    font-family: $font-family;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+p {
+    margin: 0 0 $typography-margin-bottom;
+    @include x-rem(font-size, 14px);
+    color: $color-base;
+    font-family: $font-family;
+    line-height: 20px;
+
+    @media (min-width: $bp-mw) {
+        @include x-rem(font-size, 16px);
+    }
+
+    &:last-child {
+        margin:0;
+    }
+
+}
+
+ul,
+ol {
+    margin: 0 0 20px;
+    padding: 0 0 0 30px;
+
+    li {
+        @include x-rem(font-size, 16px);
+        color: $color-base;
+        font-family: $font-family;
+        margin: 0 0 10px;
+    }
+}
+
+.button,
+.btn,
+button {
+    display: block;
+    margin: 0 auto 20px;
+    cursor: pointer; 
+    float: left;
+    padding: 12px 20px;
+
+    border-radius:40px;
+
+    font-weight: $fontWeight-normal;
+    font-family: $font-family-narrow;
+    @include x-rem(font-size, 24px);
+    border:0;
+    text-align: center;
+    color: $color-invert;
+    text-decoration: none;
+
+    
+    background: $color-primary;
+    transition: all 0.2s ease-out;
+
+    -webkit-box-shadow: 0px 10px 30px -5px rgba($color-primary, 0.50);
+    -moz-box-shadow: 0px 10px 30px -5px rgba($color-primary, 0.50);
+    box-shadow: 0px 10px 30px -5px rgba($color-primary, 0.50);
+
+    cursor:pointer;
+
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        background: #683DEE;
+    }
+
+    &:active {
+        text-decoration: none;
+        background: #6534FF;
+    }
+    &:disabled {
+        text-decoration: none;
+        background: #CCC4F7;
+        color:#E6E7F7;
+    }
+
+    span {
+        float: left;
+        width: 100%;
+        margin:0 0 3px 0;
+
+        &:last-child {
+            margin:0;
+        }
+    }
+    .small-text {
+        @include x-rem(font-size, 16px);
+    }
+
+}
+
+.mobile {
+    @media (min-width: $bp-m) {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+    @media (min-width: $bp-m) {
+        display: block;
+    }
+}
+
+.mobilep {
+    @media (min-width: $bp-m) {
+        display: none;
+    }
+}
+
+.desktopp {
+    display: none;
+    @media (min-width: $bp-mw) {
+        display: block;
+    }
+}
+
+.tabletp {
+    display: none;
+    @media (min-width: $bp-m) {
+        display: block;
+    }
+    @media (min-width: $bp-mw) {
+        display: none;
+    }
+}
+
+

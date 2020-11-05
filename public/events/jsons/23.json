@@ -1,0 +1,33 @@
+{
+  "description": "Ethereum Community Conference",
+  "external_url": "https://scan.poap.xyz/events/json/23.json",
+  "home_url": "https://scan.poap.xyz/events/json/23.json",
+  "image": "https://scan.poap.xyz/events/images/ethcc2019_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/ethcc2019_512.png",
+  "name": "EthCC",
+  "year": 2019,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2018-03-05"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2018-03-07"
+    },
+    {
+      "trait_type": "city",
+      "value": "Paris"
+    },
+    {
+      "trait_type": "country",
+      "value": "France"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://ethcc.io/"
+    }
+  ],
+  "properties": []
+}

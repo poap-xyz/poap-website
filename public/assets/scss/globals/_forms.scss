@@ -1,0 +1,214 @@
+/* ================================================================
+   Forms
+   ================================================================ */
+
+form {
+    position: relative;
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        float: left;
+        font-family: $font-family;
+        clear: both;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Chrome */
+        color: rgba($color-base, 0.5);
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: rgba($color-base, 0.5);
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba($color-base, 0.5);
+    }
+
+    :-moz-placeholder {
+        /* Firefox 4 - 18 */
+        color: rgba($color-base, 0.5);
+    }
+    
+}
+
+label {
+    margin: 0 0 6px;
+    color: $color-base;
+    width: 100%;
+
+    @include x-rem(font-size, 16px);
+
+}
+
+input[type="text"],
+input[type="search"] {
+    -webkit-appearance: none !important;
+    border-radius: 0 !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="color"] {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    box-shadow: none;
+    border: 2px solid $color-invert;
+    background: $color-invert;
+    transition: right 0.2s ease-out;
+    border-radius:10px !important;
+    margin:0 0 24px;
+    @include x-rem(font-size, 16px);
+    height: 50px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &:focus,
+    &:hover {
+        border: 2px solid $color-primary;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 2px;
+    border-radius: 0;
+    background: none;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+
+    max-width: 350px;
+    margin: 0 auto 20px;
+
+    padding: 12px 24px;
+
+    border-radius:40px;
+
+    font-weight: $fontWeight-normal;
+    font-family: $font-family-narrow;
+    @include x-rem(font-size, 24px);
+    border:0;
+    color: $color-invert;
+    text-decoration: none;
+
+    
+    background: $color-primary;
+    transition: all 0.2s ease-out;
+
+    -webkit-box-shadow: 0px 10px 30px -5px rgba($color-primary, 0.50);
+    -moz-box-shadow: 0px 10px 30px -5px rgba($color-primary, 0.50);
+    box-shadow: 0px 10px 30px -5px rgba($color-primary, 0.50);
+
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        background: #683DEE;
+    }
+
+    &:active {
+        text-decoration: none;
+        background: #6534FF;
+    }
+    &:disabled {
+        text-decoration: none;
+        background: #CCC4F7;
+        color:#E6E7F7;
+    }
+}
+
+select {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    box-shadow: none;
+    border: 2px solid $color-invert;
+    background: $color-invert;
+    transition: right 0.2s ease-out;
+    border-radius:10px !important;
+    margin:0 0 24px;
+    @include x-rem(font-size, 16px);
+    height: 50px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, $color-primary 50%),
+    linear-gradient(135deg, $color-primary 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &:hover, &:focus {
+        border: 2px solid $color-primary;
+    }
+}
+
+
+textarea {
+    padding: 12px;
+    box-shadow: none;
+    border: 2px solid $color-invert;
+    background: $color-invert;
+    transition: right 0.2s ease-out;
+    border-radius:10px;
+    width: 100%;
+
+    @include x-rem(font-size, 16px);
+    height: 150px;
+
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &:focus,
+    &:hover {
+        outline: 2px solid $color-primary;
+    }
+}
+
+.error-message {
+
+}

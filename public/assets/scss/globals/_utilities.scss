@@ -1,0 +1,155 @@
+/* ================================================================
+   REM Mixin 
+   ================================================================ */
+
+// usage: @include x-rem(font-size, 14px)
+// usage: @include x-rem(margin, 0 12px 2 1.2)
+// usage: @include x-rem(padding, 1.5 24px)
+// 
+// thanks to Eric Meyer for https://github.com/ericam/susy
+// and Hans Christian Reinl for http://drublic.de/blog/rem-fallback-sass-less/
+
+@mixin x-rem($property, $values) {
+  // Create a couple of empty lists as output buffers.
+  $base-font-size: 16px; // should be consistent with your html/body font-size
+  $px-values: ();
+  $rem-values: ();
+ 
+  // Loop through the $values list
+  @each $value in $values {
+    // For each property value, if it's in rem or px, derive both rem and
+    // px values for it and add those to the end of the appropriate buffer.
+    // Ensure all pixel values are rounded to the nearest pixel.
+    @if $value == 0 or $value == 0px {
+      // 0 -- use it without a unit
+      $px-values: join($px-values, 0);
+      $rem-values: join($rem-values, 0);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
+      // px value given - calculate rem value from base-font-size
+      $new-rem-value: $value / $base-font-size;
+      $px-values: join($px-values, round($value));
+      $rem-values: join($rem-values, #{$new-rem-value}rem);
+    } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {
+      // % value given - don't add px or rem
+      $px-values: join($px-values, #{$value});
+      $rem-values: join($rem-values, #{$value});
+    } @else if $value == auto {
+      // auto - don't add px or rem
+      $px-values: join($px-values, auto);
+      $rem-values: join($rem-values, auto);      
+    } @else {
+      // unitless value - use those directly as rem and calculate the px-fallback
+      $px-values: join($px-values, round($value * $base-font-size));
+      $rem-values: join($rem-values, #{$value}rem);
+    }
+  }
+ 
+  // output the converted rules
+  #{$property}: $px-values;
+  #{$property}: $rem-values;
+}
+
+
+
+/* ================================================================
+   CLEARFIX MIXIN
+
+   - EXAMPLE:
+
+   div {
+     @include clearfix;
+   }
+   ================================================================ */
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+/* ================================================================
+   PSUEDO MIXIN
+
+   - EXAMPLE:
+
+   div::after {
+     @include pseudo;
+     top: -1rem; left: -1rem;
+   }
+   ================================================================ */
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+/* ================================================================
+   Breakpoint mixin
+   ================================================================ */
+
+@mixin breakpoint($point) {
+  @if $point == retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+  }
+  // 16px baseline (256px) s = small
+  @else if $point == s {
+    @media (min-width: $bp-s) { @content; }
+  } 
+  // 16px baseline (580px) sw = small-wide
+  @else if $point == sw {
+    @media (min-width: $bp-sw) { @content; }
+  } 
+  // 16px baseline (580px - 767px) sw-m = small-wide TO medium
+  @else if $point == sw-m {
+    @media (min-width:$bp-sw) and (max-width:$bp-m)  { @content; }
+  } 
+  // 16px baseline (256px - 767px) s-m = small TO medium
+  @else if $point == s-m {
+    @media (min-width:$bp-s) and (max-width:$bp-m)  { @content; }
+  }
+  // 16px baseline (256px - 959px) s-l = small TO large
+  @else if $point == s-l {
+    @media (min-width:$bp-s) and (max-width:$bp-l)  { @content; }
+  }
+  @else if $point == s-xl {
+    @media (min-width:$bp-s) and (max-width:$bp-xl)  { @content; }
+  }
+  // 16px baseline (768px) m = medium
+  @else if $point == m {
+    @media (min-width: $bp-m) { @content; }
+  }
+  // 16px baseline (768px - 959px) m-l = medium TO large
+  @else if $point == m-l {
+    @media (min-width:$bp-m) and (max-width:$bp-l)  { @content; }
+  }
+  // 16px baseline (768px - 1024px) m-lg = medium TO large
+  @else if $point == m-lg {
+    @media (min-width:$bp-m) and (max-width:$bp-lg)  { @content; }
+  }
+  // 16px baseline (768px - 1152) m-l = medium TO xlarge
+  @else if $point == m-xl {
+    @media (min-width:$bp-m) and (max-width:$bp-xl)  { @content; }
+  }
+  // 16px baseline (960px) l = large
+  @else if $point == l {
+    @media (min-width: $bp-l) { @content; }
+  }
+  // 16px baseline (1024px) lg = large 
+  @else if $point == lg {
+    @media (min-width: $bp-lg) { @content; }
+  }
+  // 16px baseline (1152px) lx = extra large
+  @else if $point == xl {
+    @media (min-width: $bp-xl) { @content; }
+  }
+
+  @else {
+    @media (min-width: $point) { @content; }
+  }
+}

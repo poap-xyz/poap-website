@@ -1,0 +1,33 @@
+{
+  "description": "Part of the EthGlobal Community",
+  "external_url": "https://scan.poap.xyz/events/json/17.json",
+  "home_url": "https://scan.poap.xyz/events/json/17.json",
+  "image": "https://scan.poap.xyz/events/images/ethsanfrancisco2018_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/ethsanfrancisco2018_512.png",
+  "name": "ETHSanFrancisco",
+  "year": 2018,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2018-10-05"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2018-10-07"
+    },
+    {
+      "trait_type": "city",
+      "value": "San Francisco"
+    },
+    {
+      "trait_type": "country",
+      "value": "United States"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://ethsanfrancisco.com/"
+    }
+  ],
+  "properties": []
+}

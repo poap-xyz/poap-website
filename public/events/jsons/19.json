@@ -1,0 +1,33 @@
+{
+  "description": "",
+  "external_url": "https://scan.poap.xyz/events/json/19.json",
+  "home_url": "https://scan.poap.xyz/events/json/19.json",
+  "image": "https://scan.poap.xyz/events/images/ravecon0_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/ravecon0_512.png",
+  "name": "RaveCon0",
+  "year": 2018,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2018-10-31"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2018-10-31"
+    },
+    {
+      "trait_type": "city",
+      "value": "Prague"
+    },
+    {
+      "trait_type": "country",
+      "value": "Czech Republic"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://ravecon0.org/"
+    }
+  ],
+  "properties": []
+}

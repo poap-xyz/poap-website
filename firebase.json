@@ -1,0 +1,72 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/form",
+        "destination": "https://forms.gle/XQLMEajkGtnvh5iD8",
+        "type": 302
+      },
+      {
+        "source": "/admin",
+        "destination": "https://app.poap.xyz/admin",
+        "type": 302
+      },
+      {
+        "source": "/tombola",
+        "destination": "https://poap.xyz/#tombola",
+        "type": 302
+      },
+      {
+        "source": "/join",
+        "destination": "https://testflight.apple.com/join/oZiOSCuK",
+        "type": 302
+      },
+      {
+        "source": "/onepager",
+        "destination": "https://res.cloudinary.com/dbiqkiypz/image/upload/v1565913513/poap_onepager_june19_vz54rg",
+        "type": 302
+      },
+      {
+        "source": "/video-pitch",
+        "destination": "https://www.youtube.com/watch?v=VZlmQjhz3ko&feature=youtu.be",
+        "type": 302
+      },
+      {
+        "source": "/ios",
+        "destination": "https://apps.apple.com/us/app/poap-wallet/id1473716619?ls=1",
+        "type": 302
+      },
+      {
+        "source": "/android",
+        "destination": "https://play.google.com/store/apps/details?id=xyz.explorer.poap",
+        "type": 302
+      },
+      {
+        "source": "/telegram",
+        "destination": "https://t.me/poapxyz",
+        "type": 302
+      },
+      {
+        "source": "/discord",
+        "destination": "https://discord.gg/9s8U8Bn",
+        "type": 302
+      },
+      {
+        "source": "/claim/:id*",
+        "destination": "https://app.poap.xyz/claim/:id",
+        "type": 301
+      },
+      {
+        "source": "/claim",
+        "destination": "https://app.poap.xyz/claim",
+        "type": 301
+      }
+    ]
+  }
+}

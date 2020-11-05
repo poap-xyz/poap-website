@@ -1,0 +1,33 @@
+{
+  "description": "A nonprofit global developer conference focusing on decentralized applications, tooling, and foundational infrastructure on Ethereum.",
+  "external_url": "https://scan.poap.xyz/events/json/1.json",
+  "home_url": "https://scan.poap.xyz/events/json/1.json",
+  "image": "https://scan.poap.xyz/events/images/dappcon2018_512.png",
+  "image_url": "https://scan.poap.xyz/events/images/dappcon2018_512.png",
+  "name": "DappCon",
+  "year": 2018,
+  "tags": ["poap","event"],
+  "attributes": [
+    {
+      "trait_type": "startDate",
+      "value": "2018-07-19"
+    },
+    {
+      "trait_type": "endDate",
+      "value": "2018-07-20"
+    },
+    {
+      "trait_type": "city",
+      "value": "Berlin"
+    },
+    {
+      "trait_type": "country",
+      "value": "Germany"
+    },
+    {
+      "trait_type": "eventURL",
+      "value": "https://www.dappcon.io"
+    }
+  ],
+  "properties": []
+}
