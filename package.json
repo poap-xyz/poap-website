@@ -2,7 +2,7 @@
   "scripts": {
     "deploy": "firebase deploy",
     "dev": "parcel public/index.html",
-    "build": "rm -rf dist; parcel build public/index.html; cp -R public/events dist/events"
+    "build": "rm -rf dist; parcel build public/index.html; cp -R public/events dist/events; cp public/_redirects dist/_redirects"
   },
   "dependencies": {
     "aos": "^2.3.4",
