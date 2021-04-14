@@ -10,4 +10,4 @@
 /discord      https://discord.gg/fcxW4yR                  302
 /claim/:id    https://app.poap.xyz/claim/:id              301
 /claim        https://app.poap.xyz/claim                  301
-/*            /404.html                                   200
+/*            /index.html                                 200
