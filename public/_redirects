@@ -1,3 +1,4 @@
+/*            /index.html                                 200
 /form         https://forms.gle/XQLMEajkGtnvh5iD8         302
 /admin        https://app.poap.xyz/admin                  302
 /tombola      https://poap.xyz/#tombola                   302
@@ -10,4 +11,3 @@
 /discord      https://discord.gg/fcxW4yR                  302
 /claim/:id    https://app.poap.xyz/claim/:id              301
 /claim        https://app.poap.xyz/claim                  301
-/*            /index.html                                 200
