@@ -7,6 +7,8 @@ Install dependencies & start:
     npm install
     npm run dev
 
+Make sure to change the faqs link in index.html:46 during development.
+
 ### Development
 We are using [parcel js](https://parceljs.org) to transpile `.js` and `.scss` files.
 Builds will be created on `dist` folder.
