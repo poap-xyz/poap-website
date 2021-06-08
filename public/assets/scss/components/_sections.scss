@@ -140,26 +140,41 @@ section > img {
 }
 
 .faqs-first {
-    margin:-3px 0 0;
-    padding-top: 20px;
+    margin: 25% 0 0;
+    padding-top: 16px;
     background: $bg-color;
+    img {
+        margin-top: -30%;
+    }
     
+    @media (min-width: $bp-s) {
+        padding-top: 33px;
+    }
     @media (min-width: $bp-m) {
+        padding-top: 70px;
+    }
+    @media (min-width: $bp-mw) {
         padding-top: 0;
-        margin:-150px 0 0;
+        margin: -10% 0 0;
+        img {
+            margin-top: 0;
+        }
     }
     @media (min-width: $bp-l) {
         padding-top: 0;
-        margin:-200px 0 0;
+        margin: -5% 0 0;
     }
 
     .faqs-container {
-        padding: 0; // TODO: adapt mobile
-        margin-bottom: -10%; // TODO: adapt mobile
+        padding: 0;
+        margin-bottom: 10%;
+        margin-top: -10%;
 
         @media (min-width: $bp-m) {
             padding: 0;
-            margin-bottom: -10%;
+        }
+        @media (min-width: $bp-mw) {
+            margin-top: 0;
         }
 
         .container-faqs {
@@ -190,17 +205,17 @@ section > img {
     .faqs-container{
         background-color: $color-fourth;
 
-        margin: -17% 0 -10%; // TODO: adapt mobile
+        margin: -17% 0 -10%;
         @media (min-width: $bp-m) {
-            margin: -17% 0 -10%; // TODO: adapt
+            margin: -17% 0 -10%;
         }
         @media (min-width: $bp-l) {
             margin: -17% 0 -10%;
         }
 
-        padding: 19% 0 0; // TODO: adapt mobile
+        padding: 19% 0 0;
         @media (min-width: $bp-m) {
-            padding: 20% 0 0; // TODO: adapt
+            padding: 20% 0 0;
         }
         @media (min-width: $bp-l) {
             padding: 20% 0 0;
@@ -224,12 +239,12 @@ section > img {
 
     .faqs-container{ 
         background-color: $bg-color;
-        padding: 8% 0 0; //TODO: adapt mobile
-        margin: -5% 0 -11%; // TODO: adapt mobile
+        padding: 8% 0 0;
+        margin: -5% 0 -11%;
 
         @media (min-width: $bp-m) {
             padding: 8% 0 0;
-            margin: -5% 0 -11%; // TODO: adapt
+            margin: -5% 0 -11%;
         }
         @media (min-width: $bp-l) {
             margin: -5% 0 -11%;

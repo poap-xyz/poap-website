@@ -2,7 +2,7 @@
    Header
    ================================================================ */
 header {
-
+    pointer-events: none;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:top center;
@@ -28,6 +28,10 @@ header {
 			width: 60px;
 		}
 	}
+
+    .logo, .toggle-menu, .navigation {
+        pointer-events: all;
+    }
 
     &.fixed {
     	height: 200px;
@@ -75,10 +79,10 @@ main {
    ================================================================ */
 .footer {
     background-color: white;
-	margin: 0; // TODO: adapt mobile
+	margin: 0;
 	position:relative;
 	@media (min-width: $bp-m) {
-		margin: 0; // TODO: adapt the top
+		margin: 0;
 		z-index: 6;
 		position: relative;
 	}

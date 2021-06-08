@@ -297,15 +297,15 @@ button {
 }
 
 .mobilep {
-    @media (min-width: $bp-m) {
-        display: none;
+    @media (min-width: $bp-mw) {
+        display: none!important;
     }
 }
 
 .desktopp {
-    display: none;
+    display: none!important;
     @media (min-width: $bp-mw) {
-        display: block;
+        display: block!important;
     }
 }
 
