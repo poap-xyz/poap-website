@@ -1,11 +1,13 @@
 {
   "scripts": {
     "deploy": "firebase deploy",
-    "dev": "parcel public/index.html",
-    "build": "rm -rf dist; parcel build public/index.html; cp -R public/events dist/events; cp public/_redirects dist/_redirects"
+    "dev": "parcel public/index.html public/faqs.html",
+    "build": "rm -rf dist; parcel build public/index.html public/faqs.html; cp -R public/events dist/events; cp public/_redirects dist/_redirects"
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
     "aos": "^2.3.4",
+    "bootstrap": "^5.0.1",
     "firebase-tools": "^6.9.2",
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1"

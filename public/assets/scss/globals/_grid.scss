@@ -2,17 +2,24 @@
    BOOTSTRAP GRID
    ================================================================ */
 
-.container {
-  width:100%; max-width:75em; min-width:20em;
+.banner-container {
+  width:100%; max-width:75em;
+  // margin: 0 0 50%;
   margin-right: auto; margin-left: auto;
 
-  padding-left: ($grid-gutter-em*2); padding-right: ($grid-gutter-em*2);
+  // padding-left: ($grid-gutter-em*2)!important; padding-right: ($grid-gutter-em*2)!important;
+  padding-left: 2%!important; padding-right: 2%!important;
   
   @media (min-width: $bp-mw) {
     padding:0;
-    padding-left: $grid-gutter-em; padding-right: $grid-gutter-em;
+    padding-left: $grid-gutter-em!important; padding-right: $grid-gutter-em!important;
   }
 
+}
+
+.header-container {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .row {   

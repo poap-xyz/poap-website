@@ -2,28 +2,20 @@
    Main Sections POAP App 
    ****************************************************** */
 
-.image-shape {
-    width: 100%;
+section > img {
+    width: 101%;
     overflow: hidden;
-    img {
-        width: 102%;
-        max-width: none;
-        margin:0 0 0 -1%;
-    }    
+    max-width: none;
+    margin:0 0 0 -1%;
 }
 
 /* ******************************************************
    Banner
    ****************************************************** */
 .banner {
-    background-image:url('../images/bgcitysmall.svg');
-    background-size:contain;
-    background-position:center bottom;
-    background-repeat:no-repeat;
-
-
+    
     @media (min-width: $bp-m) {
-        margin-top: -7%;
+        // margin-top: -7%;
     }
 
     h1 {
@@ -87,9 +79,8 @@
 }
 
 /* ******************************************************
-   FAQS
+   FAQS (in main)
    ****************************************************** */
-
 .faqs-container {
 
     h2{
@@ -150,20 +141,25 @@
 
 .faqs-first {
     margin:-3px 0 0;
-    background: #E9EDF5;
-
+    padding-top: 20px;
+    background: $bg-color;
+    
     @media (min-width: $bp-m) {
-        margin:-60px 0 0;
+        padding-top: 0;
+        margin:-150px 0 0;
     }
     @media (min-width: $bp-l) {
-        margin:-80px 0 0;
+        padding-top: 0;
+        margin:-200px 0 0;
     }
 
-    .faqs-container{
-        padding:0 0 23%;
+    .faqs-container {
+        padding: 0; // TODO: adapt mobile
+        margin-bottom: -10%; // TODO: adapt mobile
 
         @media (min-width: $bp-m) {
-            padding:0 0 20%;
+            padding: 0;
+            margin-bottom: -10%;
         }
 
         .container-faqs {
@@ -171,29 +167,43 @@
                 margin:0;
             }
         }
+
+        .faqs-first-text {
+            padding-left: 5%;
+            @media (max-width: $bp-m) {
+                padding-left: 20%;
+            }
+        }
+
+        .faq {
+            .shield-img {
+                margin: 0;
+                margin-bottom: 4rem;
+            }
+        }
     }
 }
 
 .faqs-second {
-    margin:-23% 0 0;
-    background: #E9EDF5;
-
-    @media (min-width: $bp-m) {
-        margin:-25% 0 0;
-    }
+    background-color: $color-fourth;
 
     .faqs-container{
-        background-color:#FCCDD3;
-        margin:-3px 0 0;
+        background-color: $color-fourth;
 
-        padding: 0 0 20%;
-
-        
+        margin: -17% 0 -10%; // TODO: adapt mobile
         @media (min-width: $bp-m) {
-            padding:0;
+            margin: -17% 0 -10%; // TODO: adapt
         }
         @media (min-width: $bp-l) {
-            padding: 0 0 7%;
+            margin: -17% 0 -10%;
+        }
+
+        padding: 19% 0 0; // TODO: adapt mobile
+        @media (min-width: $bp-m) {
+            padding: 20% 0 0; // TODO: adapt
+        }
+        @media (min-width: $bp-l) {
+            padding: 20% 0 0;
 
             .container-faqs.inverse {
                 align-items: flex-end;
@@ -205,9 +215,7 @@
 }
 
 .faqs-third {
-    margin:-1px 0 0;
-    background: #E9EDF5;
-
+    margin: 0 0 0;
 
     .image-shape {
         top: -1px;
@@ -215,17 +223,16 @@
     }
 
     .faqs-container{ 
-        padding:0 0 23%;
-
-        margin: -30% 0 0;
+        background-color: $bg-color;
+        padding: 8% 0 0; //TODO: adapt mobile
+        margin: -5% 0 -11%; // TODO: adapt mobile
 
         @media (min-width: $bp-m) {
-            padding:0 0 20%;
-            margin:-12% 0 0;
+            padding: 8% 0 0;
+            margin: -5% 0 -11%; // TODO: adapt
         }
-
         @media (min-width: $bp-l) {
-            margin: -22% 0 0 0;
+            margin: -5% 0 -11%;
         }
 
         .container-faqs.bottom {
@@ -238,7 +245,12 @@
 
             }
         }
+        
+        .faqs-third-text {
+            max-width: 400px;
+        }
     }
+
 }
 
 /* ******************************************************
@@ -642,4 +654,12 @@
         }
       }
       
+}
+
+.main-divider {
+    background-color: $color-grey;
+}
+
+.main-events {
+    overflow-x: hidden;
 }
