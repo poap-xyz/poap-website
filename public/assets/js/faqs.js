@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import faqsBackup from '../json/faqs.json'
 
 // This function takes the formatted HTML
 // and inserts it into the document as
@@ -66,9 +67,13 @@ function insertAccordionItem(parentId, itemId, title, content) {
   insertHTML(parentId, html);
 }
 
-async function getFaqs() {
-  const faqs = await fetch('https://api.poap.xyz/faq');
-  return faqs;
+function drawFaqs(faqs) {
+  const parentId = 'accordions-container';
+  const sections = faqs.sections;
+  for(var key in sections) {
+    const section = sections[key];
+    insertAccordion(parentId, section);
+  }
 }
 
 (function ($, talonUtil) {
@@ -76,16 +81,12 @@ async function getFaqs() {
   fetch('https://api.poap.xyz/faq')
     .then(data => data.json()
     .then(faqs => {
-        const parentId = 'accordions-container';
-        const sections = faqs.sections;
-        for(var key in sections) {
-          const section = sections[key];
-          insertAccordion(parentId, section);
-        }
+        drawFaqs(faqs);
       })
     )
     .catch(function(error) {
-      console.error(error);
+      console.error('Error loading faqs, using local backup..\n', error);
+      drawFaqs(faqsBackup)
     });
 
   

@@ -233,23 +233,37 @@ main {
             "a  b"
             "c  d"
             "e  f"
+            "g  h"
             ;
         padding: 3%;
         @media (min-width: $bp-m) {
             padding: 15%;
             grid-template-areas: 
             "title title title"
-            "a     b     c"
-            "d     e     f"
+            "a     b"
+            "c     d"
+            "e     f"
+            "g     h"
             ;
         }
-        h4 { grid-area: title; }
+        h4 { 
+            grid-area: title;
+            color: $color-primary;
+        }
+        a {
+            color: $color-fifth;
+            &:hover {
+                color: $color-primary;
+            }
+        }
         .a { grid-area: a; }
         .b { grid-area: b; }
         .c { grid-area: c; }
         .d { grid-area: d; }
         .e { grid-area: e; }
         .f { grid-area: f; }
+        .g { grid-area: g; }
+        .h { grid-area: h; }
     }
     .join-links {
         grid-area: join-links;
@@ -260,6 +274,9 @@ main {
         @media (min-width: $bp-m) {
             align-items: flex-end;        
             padding: 15%;
+        }
+        h4 { 
+            color: $color-primary;
         }
     }
     .eth-branding {
