@@ -167,7 +167,7 @@ section > img {
 
     .faqs-container {
         padding: 0;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         margin-top: -10%;
 
         @media (min-width: $bp-m) {
@@ -175,6 +175,10 @@ section > img {
         }
         @media (min-width: $bp-mw) {
             margin-top: 0;
+            margin-bottom: -15%!important;
+        }
+        @media (min-width: $bp-l) {
+            margin-bottom: -15%!important;
         }
 
         .container-faqs {
@@ -184,7 +188,7 @@ section > img {
         }
 
         .faqs-first-text {
-            padding-left: 5%;
+            padding-left: 10%;
             @media (max-width: $bp-m) {
                 padding-left: 20%;
             }
