@@ -5,14 +5,19 @@
 // Color Variables
 $color-base: #4b4b4b; //Black
 $color-invert: #fff;
-$bg-color: #F2F4F6; //
-$color-primary: #6534FF; //violet
+$bg-color: #F1F5FD; //
+$color-primary: #8076FA; //violet
 $color-secondary: #F9879A; // rosa text
 $color-third: #52D2BD; // green
-$color-fourth:#FCCDD3; //rose
+$color-fourth:#FFEDF0; //rose
+$color-fifth: #8492CE;
+$color-sixth: #6873A4;
+$color-grey: #c0c0c0;
+
+
 
 // Typography  
-$font-family: 'Archivo', sans-serif;
+$font-family: 'Noway Round', 'Archivo', sans-serif;
 $font-family-narrow: 'Archivo Narrow', sans-serif;
  
 $fontWeight-normal: 400;
@@ -37,6 +42,6 @@ $bp-xl: 81.25em; // 1300px
 
 // Grid
 $grid-gutter: 16px;  
-$grid-gutter-em: 1em; // Changing grid gutter to em causes a compiling error :/
+$grid-gutter-em: 3em; // Changing grid gutter to em causes a compiling error :/
 
 

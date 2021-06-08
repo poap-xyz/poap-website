@@ -1,3 +1,6 @@
+@import "fonts";
+
+
 /* ================================================================
    Boilerplate - Base Styles 
    ================================================================ */
@@ -15,6 +18,7 @@ body {
     background: $color-invert;
     font-size:16px; 
     overflow-x: hidden;
+    height: 0; // ugly temp fix for extra space (200px) at the bottom caused by the header
 }
 
 header, main, footer {
@@ -113,7 +117,8 @@ h3,
 h4,
 h5 {
     margin: 0 0 $typography-margin-bottom;
-    font-family: $font-family-narrow;
+    font-family: 'Comfortaa';
+    // font-family: $font-family-narrow;
 }
 
 h1 {
@@ -141,7 +146,7 @@ h2 {
 h3 {
     @include x-rem(font-size, 24px);
     color:$color-primary;
-    font-family: $font-family-narrow;
+    font-family: 'Comfortaa';
     font-weight: $fontWeight-normal;
     margin-bottom:12px;
 
@@ -151,7 +156,7 @@ h3 {
 }
 h4 {
     @include x-rem(font-size, 16px);
-    color:$color-base;
+    color:$color-fifth;
     font-family: $font-family;
     font-weight: $fontWeight-bold;
     margin:0; 
@@ -165,7 +170,7 @@ h4 {
 
 h5 {
     @include x-rem(font-size, 30px);
-    color: $color-base;
+    color: $color-fifth;
     font-weight: $fontWeight-normal; 
 
     @media (min-width: $bp-mw) {
@@ -176,21 +181,23 @@ h5 {
 
 a {
     color: $color-primary;
-    text-decoration: none;
+    text-decoration: none!important;
     font-family: $font-family;
 
     &:hover,
     &:focus {
-        text-decoration: underline;
+        text-decoration: underline!important;
     }
 }
 
 p {
     margin: 0 0 $typography-margin-bottom;
     @include x-rem(font-size, 14px);
-    color: $color-base;
+    color: $color-fifth;
     font-family: $font-family;
-    line-height: 20px;
+    line-height: 23px;
+    font-style: normal;
+    font-weight: $fontWeight-normal;
 
     @media (min-width: $bp-mw) {
         @include x-rem(font-size, 16px);
@@ -278,27 +285,27 @@ button {
 
 .mobile {
     @media (min-width: $bp-m) {
-        display: none;
+        display: none!important;
     }
 }
 
 .desktop {
-    display: none;
+    display: none!important;
     @media (min-width: $bp-m) {
-        display: block;
+        display: block!important;
     }
 }
 
 .mobilep {
-    @media (min-width: $bp-m) {
-        display: none;
+    @media (min-width: $bp-mw) {
+        display: none!important;
     }
 }
 
 .desktopp {
-    display: none;
+    display: none!important;
     @media (min-width: $bp-mw) {
-        display: block;
+        display: block!important;
     }
 }
 
@@ -312,4 +319,71 @@ button {
     }
 }
 
+/* ================================================================
+   Accordion default values
+   ================================================================ */
 
+.collapsing {
+    transition: none!important;
+}
+.accordion {
+    &-item {
+        min-width: 1300px;
+        @media (max-width: $bp-xl) {
+            min-width: 900px;
+        }
+        @media (max-width: $bp-l) {
+            min-width: 800px;
+        }
+        @media (max-width: $bp-mw) {
+            min-width: 650px;
+        }
+        @media (max-width: $bp-m) {
+            min-width: 400px;
+        }
+        @media (max-width: $bp-sw) {
+            min-width: 300px;
+        }
+        @media (max-width: $bp-s) {
+            min-width: 200px;
+        }
+        border: none!important;
+        background-color: inherit!important;
+        margin-bottom: 10px;
+        * {
+            box-shadow: none!important;
+        }
+        .accordion-header {
+            display: flex;
+            border: 1px solid $color-primary;
+            border-radius: 20px;
+            .accordion-button {
+                background-color: inherit!important;
+                &::after {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238492CE'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");                }
+                &:not(.collapsed) {
+                    h5 {
+                        color: #8076FA;
+                    }
+                }
+                h5 {
+                    margin: 0;
+                }
+            }
+        }
+        .accordion-collapse {
+            border: none;
+        }
+        .accordion-body {
+            padding-left: 5px;
+            p {
+                color: $color-sixth;
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-left: 1px solid #C4CAE8;
+                max-width: none;
+            }
+        }
+    }
+}

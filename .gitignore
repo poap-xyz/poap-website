@@ -67,3 +67,6 @@ node_modules/
 # Build folder
 dist/
 .cache/
+
+# VSCode extensions
+.history
