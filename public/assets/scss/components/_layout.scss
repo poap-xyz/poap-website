@@ -564,3 +564,8 @@ content: '';
     transform: scaleX(1);
     transform-origin: center left;
 }
+
+a.disabled {
+    pointer-events: none;
+    color: #ccc;
+}
