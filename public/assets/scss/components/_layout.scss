@@ -234,7 +234,6 @@ main {
             "c  d"
             "e  f"
             "g  h"
-            "i  j"
             ;
         padding: 3%;
         @media (min-width: $bp-m) {
@@ -245,7 +244,6 @@ main {
             "c     d"
             "e     f"
             "g     h"
-            "i     j"
             ;
         }
         h4 { 
@@ -266,8 +264,6 @@ main {
         .f { grid-area: f; }
         .g { grid-area: g; }
         .h { grid-area: h; }
-        .i { grid-area: i; }
-        .j { grid-area: j; }
     }
     .join-links {
         grid-area: join-links;
