@@ -1,0 +1,98 @@
+[[redirects]]
+  from = "/form"
+  to = "https://forms.gle/XQLMEajkGtnvh5iD8"
+  status = 302
+
+  # By default, redirects won’t be applied if there’s a file with the same
+  # path as the one defined in the `from` property. Setting `force` to `true`
+  # will make the redirect rule take precedence over any existing files.
+  force = true
+
+  # Redirect from /old-path?id=123 to /new-path. Each combination of query
+  # params needs to be defined in a separate [[redirects]] block.
+  # More information at https://docs.netlify.com/routing/redirects/redirect-options/#query-parameters
+  # query = {id = ":id"}
+
+[[redirects]]
+  from = "/admin"
+  to = "https://app.poap.xyz/admin"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/tombola"
+  to = "https://poap.xyz/#tombola"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/join"
+  to = "https://testflight.apple.com/join/oZiOSCuK"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/onepager"
+  to = "https://res.cloudinary.com/dbiqkiypz/image/upload/v1565913513/poap_onepager_june19_vz54rg"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/video-pitch"
+  to = "https://www.youtube.com/watch?v=VZlmQjhz3ko&feature=youtu.be"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/ios"
+  to = "https://apps.apple.com/us/app/poap-wallet/id1473716619?ls=1"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/android"
+  to = "https://play.google.com/store/apps/details?id=xyz.explorer.poap"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/telegram"
+  to = "https://t.me/poapxyz"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/fcxW4yR"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/claim/:id"
+  to = "https://app.poap.xyz/claim/:id"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "/claim"
+  to = "https://app.poap.xyz/claim"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "/events/badges/:id"
+  to = "/events/badges/:id"
+  status = 200
+  force = true
+  
+[[redirects]]
+  from = "/faqs"
+  to = "/faqs.html"
+  status = 200
+  force = true
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
