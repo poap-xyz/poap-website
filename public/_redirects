@@ -11,4 +11,5 @@
 /claim/:id            https://app.poap.xyz/claim/:id              301
 /claim                https://app.poap.xyz/claim                  301
 /faqs                 /faqs.html                                  200
-/*                    /events/badges/:route                       200
+/events/badges/*      /events/badges/:route                       200
+/*                    /index.html                                 200
