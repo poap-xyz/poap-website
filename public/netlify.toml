@@ -81,9 +81,8 @@
   
 [[redirects]]
   from = "/events/badges/*"
-  to = "https://www.youtube.com/results?search_query=:splat"
+  to = "/events/badges/:splat"
   status = 200
-  force = true
   
 [[redirects]]
   from = "/faqs"
