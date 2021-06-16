@@ -80,8 +80,8 @@
   force = true
   
 [[redirects]]
-  from = "/events/badges/:id"
-  to = "/events/badges/:id"
+  from = "/events/badges/*"
+  to = "/events/badges/:splat"
   status = 200
   force = true
   
