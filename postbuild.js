@@ -4,7 +4,7 @@ const fse = require('fs-extra');
 const srcDir = `public/events`;
 const destDir = `dist/events`;
 // To copy a folder or file  
-fse.copySync(srcDir, destDir, function (err) {
+fse.copy(srcDir, destDir, function (err) {
   if (err) {
     console.error(err);
   } else {
