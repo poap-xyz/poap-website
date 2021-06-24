@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "xyz.poap.app.mobile",
+        "sha256_cert_fingerprints": [
+          "2B:D5:69:36:C4:9A:E8:6D:9B:F2:50:A0:3A:C8:F7:4E:00:CB:15:54:A8:03:36:1B:62:16:18:A2:24:F0:0E:85"
+        ]
+      }
+    }
+  ]
