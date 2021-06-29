@@ -3,18 +3,32 @@
    ================================================================ */
 
 // Color Variables
-$color-base: #4b4b4b; //Black
-$color-invert: #fff;
-$bg-color: #F1F5FD; //
-$color-primary: #8076FA; //violet
-$color-secondary: #F9879A; // rosa text
-$color-third: #52D2BD; // green
+$violet1: #9289FF;
+$violet2: #8076FA; //h3 h1
+$violet3: #7168DE;
+$violet4: #B1AFFF;
+$violet5: #DDDBFF;
+
+$grayscale6: #4D5680; // text
+$grayscale5: #6873A4; // secondary-text
+$grayscale4: #8492CE; //h4
+$grayscale3: #C4CAE8;
+$grayscale2: #D5DCF3;
+$grayscale1: #E6EDFE;
+$grayscale0: #F1F5FD; // backgrounds
+
+$success-light: #40DD7F;
+$error-red: #FB4E4E;
+$pink2: #F87588;
+$pink5: #FCCDD3;
+$white: #FFF;
+
+// Color Variables
+$color-base: $grayscale6; //Black
+$color-invert: $white;
+$color-primary: $violet2; //violet
+$color-secondary: $pink2; // rosa text
 $color-fourth:#FFEDF0; //rose
-$color-fifth: #8492CE;
-$color-sixth: #6873A4;
-$color-grey: #c0c0c0;
-
-
 
 // Typography  
 $font-family: 'Noway Round', 'Archivo', sans-serif;
