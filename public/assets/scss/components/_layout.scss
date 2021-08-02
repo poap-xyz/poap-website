@@ -137,13 +137,17 @@ main {
         }
 	}
 
-    .eth-branding {
-		text-align: center;
-        padding: 0;
-        img {
-            width: 150px;
+    .brandings {
+        text-align: center;
+        span {
+            text-align: center;
+            padding: 0;
+            img {
+                width: 150px;
+            }
         }
     }
+
 
 	h5 {
 		margin-bottom:24px;
@@ -201,7 +205,7 @@ main {
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
         "home-link    ecosystem    join-links"
-        "eth-branding eth-branding eth-branding"
+        "brandings brandings brandings"
         ;
     @media (max-width: $bp-m) {
         grid-template-rows: 2fr 2fr 1fr;
@@ -279,8 +283,8 @@ main {
             color: $color-primary;
         }
     }
-    .eth-branding {
-        grid-area: eth-branding;
+    .brandings {
+        grid-area: brandings;
         background-color: #F7F7F7;
     }
 }
