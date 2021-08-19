@@ -1,15 +1,22 @@
 {
-    "applinks": {
-        "details": [
-            {
-                "appIDs": [
-                    "BNJH2R62BZ.xyz.poap.app.mobile"
-                ],
-                "components": {
-                    "/": "/claim/*",
-                    "comment": "Matches any URL that starts with /claim/"
-                }
-            }
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "BNJH2R62BZ.xyz.poap.app.mobile"
+        ],
+        "appID": "BNJH2R62BZ.xyz.poap.app.mobile",
+        "components": [
+          {
+            "/": "/claim/*",
+            "comment": "Matches any URL that starts with /claim/"
+          }
+        ],
+        "paths": [
+          "/claim/*"
         ]
-    }
+      }
+    ]
+  }
 }
