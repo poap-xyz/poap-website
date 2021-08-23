@@ -71,3 +71,4 @@ dist/
 # VSCode extensions
 .history
 .idea/
+.vscode/
