@@ -50,7 +50,7 @@
         },
         {
           "question": "Claiming a POAP",
-          "answer": "When you assist a POAP sponsored event, the organizer will distribute claim codes in the shape of QR codes or URLS. Scan the QR or enter the URL in your browser to claim the POAP using your Ethereum address or email."
+          "answer": "When you assist a POAP sponsored event, the organizer will distribute claim codes in the shape of QR codes or URLS. Scan the QR or enter the URL in your browser to claim the POAP using your Ethereum/Celo address or email."
         },
         {
           "question": "I've assisted an event and didn't claim my POAP",
@@ -58,7 +58,7 @@
         },
         {
           "question": "How does claiming a POAP with my email work?",
-          "answer": "If you claim a POAP with your email, we will save it for you until you decide to claim it with your Ethereum address. You will then have to enter [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and enter your email. You will see your POAPs here, click on one and click the \"Claim POAP\" button. \nYou will receive an email with a link that allows you to claim all of your pending POAPs with your Ethereum address."
+          "answer": "If you claim a POAP with your email, we will save it for you until you decide to claim it with your Ethereum or Celo address. You will then have to enter [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and enter your email. You will see your POAPs here, click on one and click the \"Claim POAP\" button. \nYou will receive an email with a link that allows you to claim all of your pending POAPs with your Ethereum or Celo address."
         },
         {
           "question": "Can I sell my POAPs?",
@@ -66,7 +66,7 @@
         },
         {
           "question": "How do I know if my POAP is on Ethereum, Celo or xDai",
-          "answer": "There are many ways to find this out. The easiest one is heading to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nClick on the POAP you wish to know the residing network. If you scroll down and see the \"Migrate\" button, it means it's on xDai. Else, your POAP is on Ethereum."
+          "answer": "There are many ways to find this out. The easiest one is heading to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum/Celo address/ENS to see your collection.\nClick on the POAP you wish to know the residing network. If you scroll down and see the \"Migrate\" button, it means it's on xDai. Else, your POAP is on Ethereum or Celo."
         },
         {
           "question": "Why can't I see my POAP on Etherscan/Opensea?",
@@ -74,15 +74,19 @@
         },
         {
           "question": "Migrating a POAP to Ethereum",
-          "answer": "In order to migrate a POAP from xDai to Ethereum, you should go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nOnce this is done select the POAP you wish to migrate, click it and scroll down until you see the \"Migrate\" buttonnClick that button, you will be prompted to confirm a transaction. Keep in mind gas costs will be payed by the user."
+          "answer": "In order to migrate a POAP from xDai to Ethereum, you should go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nOnce this is done select the POAP you wish to migrate, click it and scroll down until you see the \"Migrate\" button. Select the Ethereum box and click that button, you will be prompted to confirm a transaction. Keep in mind gas costs will be payed by the user."
+        },
+        {
+          "question": "Migrating a POAP to Celo",
+          "answer": "In order to migrate a POAP from xDai to Celo, you should go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Celo Address to see your collection.\nOnce this is done select the POAP you wish to migrate, click it and scroll down until you see the \"Migrate\" button. Select the Celo box and click that button, you will be prompted to confirm a transaction. Keep in mind gas costs will be payed by the user."
         },
         {
           "question": "Transferring POAPs from one address to another",
-          "answer": "To transfer POAPs from one address to another you can use [https://unftwallet.xyz/](https://unftwallet.xyz/) .\nYou will have to connect your wallet and select the corresponding network (Ethereum or xDai) on your wallet.\nAdd the POAP contract which is already preloaded in the \"Common\" contract tab.\nThere you can select the POAP you want to transfer and enter the address to initiate the transaction.\nIf you are transacting on xDai, keep in mind that the transfer will be paid for in xDai token. If you do not hold funds on the xDai chain, you can use the following faucet to get funds and cover for the transfer: [https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet](https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet)"
+          "answer": "To transfer POAPs from one address to another you can use [https://unftwallet.xyz/](https://unftwallet.xyz/) .\nYou will have to connect your wallet and select the corresponding network (Celo, Ethereum or xDai) on your wallet.\nAdd the POAP contract which is already preloaded in the \"Common\" contract tab.\nThere you can select the POAP you want to transfer and enter the address to initiate the transaction.\nIf you are transacting on xDai, keep in mind that the transfer will be paid for in xDai token. If you do not hold funds on the xDai chain, you can use the following faucet to get funds and cover for the transfer: [https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet](https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet)"
         },
         {
           "question": "Where can I see my collection?",
-          "answer": "There are various ways in which you can see your POAP collection. \nYou can go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and enter your Ethereum address.\nIf you are on mobile, you may prefer using our mobile app called POAP wallet ([https://apps.apple.com/ar/app/poap-wallet/id1473716619](https://apps.apple.com/ar/app/poap-wallet/id1473716619)) or using Metamask Mobile. To see your POAPs on Metamask Mobile, please follow this guide: [https://tomso11.medium.com/how-to-see-your-poaps-on-metamask-bb85a82c617d](https://tomso11.medium.com/how-to-see-your-poaps-on-metamask-bb85a82c617d)"
+          "answer": "There are various ways in which you can see your POAP collection. \nYou can go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and enter your Ethereum/Celo address.\nIf you are on mobile, you may prefer using our mobile app called POAP wallet ([https://apps.apple.com/ar/app/poap-wallet/id1473716619](https://apps.apple.com/ar/app/poap-wallet/id1473716619)) or using Metamask Mobile. To see your POAPs on Metamask Mobile, please follow this guide: [https://tomso11.medium.com/how-to-see-your-poaps-on-metamask-bb85a82c617d](https://tomso11.medium.com/how-to-see-your-poaps-on-metamask-bb85a82c617d)"
         }
       ]
     },
@@ -103,7 +107,7 @@
         },
         {
           "question": "I've received my codes, what do I do with them?",
-          "answer": "The codes you received can be distributed to each attendee on a one-by-one basis.\nCodes can be distributed using our [Discord bot](https://github.com/poapxyz/poap-bot), via email using a mass emailing software system, using [POAP.delivery](https://poap.delivery/) if you collected your attendees Ethereum addresses or [POAP.websites](https://poap.websites/) if you wish to share a QR.\nIf you would like to set up a Delivery, Website or explore other distribution methods, please reach out to us using our Discord or Telegram channels.\nFor more information on responsible distribution, please read this article: [https://medium.com/@poap/the-core-value-proposition-of-poap-explained-dc379aca332d](https://medium.com/@poap/the-core-value-proposition-of-poap-explained-dc379aca332d)"
+          "answer": "The codes you received can be distributed to each attendee on a one-by-one basis.\nCodes can be distributed using our [Discord bot](https://github.com/poapxyz/poap-bot), via email using a mass emailing software system, using [POAP.delivery](https://poap.delivery/) if you collected your attendees Ethereum/Celo addresses or [POAP.websites](https://poap.websites/) if you wish to share a QR.\nIf you would like to set up a Delivery, Website or explore other distribution methods, please reach out to us using our Discord or Telegram channels.\nFor more information on responsible distribution, please read this article: [https://medium.com/@poap/the-core-value-proposition-of-poap-explained-dc379aca332d](https://medium.com/@poap/the-core-value-proposition-of-poap-explained-dc379aca332d)"
         },
         {
           "question": "Can I track the redemptions of my event ?",
