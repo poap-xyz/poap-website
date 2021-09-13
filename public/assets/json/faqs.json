@@ -62,23 +62,23 @@
         },
         {
           "question": "Can I sell my POAPs?",
-          "answer": "Although we do not recommend selling your life's bookmarks, you can do so by using [https://epor.io/](https://epor.io/help) on xDai and [https://opensea.io/](https://opensea.io/) on Mainnet."
+          "answer": "Although we do not recommend selling your life's bookmarks, you can do so by using [https://epor.io/](https://epor.io/help) on xDai and [https://opensea.io/](https://opensea.io/) on Ethereum."
         },
         {
-          "question": "How do I know if my POAP is on Mainnet or xDai",
-          "answer": "There are many ways to find this out. The easiest one is heading to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nClick on the POAP you wish to know the residing network. If you scroll down and see the \"Migrate\" button, it means it's on xDai. Else, your POAP is on Mainnet."
+          "question": "How do I know if my POAP is on Ethereum, Celo or xDai",
+          "answer": "There are many ways to find this out. The easiest one is heading to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nClick on the POAP you wish to know the residing network. If you scroll down and see the \"Migrate\" button, it means it's on xDai. Else, your POAP is on Ethereum."
         },
         {
           "question": "Why can't I see my POAP on Etherscan/Opensea?",
-          "answer": "To make POAP free for collectors, POAPs are minted on the xDai chain, a sidechain of Ethereum.\nAs Etherscan and Opensea can only show what's on the Ethereum mainnet, you won't be able to see your POAP collection unless you migrate it to mainnet (by paying the fees)."
+          "answer": "To make POAP free for collectors, POAPs are minted on the xDai chain, a sidechain of Ethereum.\nAs Etherscan and Opensea can only show what's on the Ethereum, you won't be able to see your POAP collection unless you migrate it to Ethereum (by paying the fees)."
         },
         {
-          "question": "Migrating a POAP to mainnet",
-          "answer": "In order to migrate a POAP from xDai to mainnet, you should go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nOnce this is done select the POAP you wish to migrate, click it and scroll down until you see the \"Migrate\" buttonnClick that button, you will be prompted to confirm a transaction. Keep in mind gas costs will be payed by the user."
+          "question": "Migrating a POAP to Ethereum",
+          "answer": "In order to migrate a POAP from xDai to Ethereum, you should go to [https://app.poap.xyz/scan/](https://app.poap.xyz/scan/) and input your Ethereum Address/ENS to see your collection.\nOnce this is done select the POAP you wish to migrate, click it and scroll down until you see the \"Migrate\" buttonnClick that button, you will be prompted to confirm a transaction. Keep in mind gas costs will be payed by the user."
         },
         {
           "question": "Transferring POAPs from one address to another",
-          "answer": "To transfer POAPs from one address to another you can use [https://unftwallet.xyz/](https://unftwallet.xyz/) .\nYou will have to connect your wallet and select the corresponding network (Ethereum Mainnet or xDai) on your wallet.\nAdd the POAP contract which is already preloaded in the \"Common\" contract tab.\nThere you can select the POAP you want to transfer and enter the address to initiate the transaction.\nIf you are transacting on xDai, keep in mind that the transfer will be paid for in xDai token. If you do not hold funds on the xDai chain, you can use the following faucet to get funds and cover for the transfer: [https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet](https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet)"
+          "answer": "To transfer POAPs from one address to another you can use [https://unftwallet.xyz/](https://unftwallet.xyz/) .\nYou will have to connect your wallet and select the corresponding network (Ethereum or xDai) on your wallet.\nAdd the POAP contract which is already preloaded in the \"Common\" contract tab.\nThere you can select the POAP you want to transfer and enter the address to initiate the transaction.\nIf you are transacting on xDai, keep in mind that the transfer will be paid for in xDai token. If you do not hold funds on the xDai chain, you can use the following faucet to get funds and cover for the transfer: [https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet](https://www.xdaichain.com/for-users/get-xdai-tokens/xdai-faucet)"
         },
         {
           "question": "Where can I see my collection?",
