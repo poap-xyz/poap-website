@@ -155,14 +155,14 @@ section > img {
     }
     @media (min-width: $bp-mw) {
         padding-top: 0;
-        margin: -10% 0 0;
+        margin: 8% 0 0;
         img {
             margin-top: 0;
         }
     }
     @media (min-width: $bp-l) {
         padding-top: 0;
-        margin: -5% 0 0;
+        margin: 7% 0 0;
     }
 
     .faqs-container {
@@ -204,8 +204,6 @@ section > img {
 }
 
 .faqs-second {
-    background-color: $color-fourth;
-
     .faqs-container{
         background-color: $color-fourth;
 

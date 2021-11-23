@@ -12,7 +12,7 @@ import bootstrap from 'bootstrap'
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 250) {
+    if (scroll >= 50) {
       header.addClass("fixed");
       fix.addClass("fixed");
     }
@@ -36,6 +36,20 @@ import bootstrap from 'bootstrap'
       }
     }
   });
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-label')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show-dropdown-content')) {
+          openDropdown.classList.remove('show-dropdown-content');
+        }
+      }
+    }
+  }
 
 
   /* Scroll to section */
