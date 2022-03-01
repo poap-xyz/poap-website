@@ -203,7 +203,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 5fr 1fr;
     grid-template-areas:
-        "home-link    ecosystem    join-links"
+        "ecosystem    home-link    join-links"
         "eth-branding eth-branding eth-branding"
         ;
     @media (max-width: $bp-m) {
@@ -218,6 +218,7 @@ main {
 
     .home-link {
         grid-area: home-link;
+        text-align: center;
         img {
             margin: 15%;
             width: 12%;
@@ -280,6 +281,21 @@ main {
         }
         h4 { 
             color: $color-primary;
+        }
+
+    }
+    .legal {
+        margin-top: auto;
+        a {
+            color: $grayscale4;
+            &:hover {
+                color: $color-primary;
+            }
+            &:first-child {
+                margin-right: .5rem;
+                padding-right: 1rem;
+                border-right: 2px solid $grayscale2;
+            }
         }
     }
     .eth-branding {
