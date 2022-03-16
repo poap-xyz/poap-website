@@ -26,7 +26,7 @@
       $rem-values: join($rem-values, 0);
     } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
       // px value given - calculate rem value from base-font-size
-      $new-rem-value: $value / $base-font-size;
+      $new-rem-value: calc($value / $base-font-size);
       $px-values: join($px-values, round($value));
       $rem-values: join($rem-values, #{$new-rem-value}rem);
     } @else if type-of($value) == number and not unitless($value) and (unit($value) == "%") {

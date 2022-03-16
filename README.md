@@ -4,6 +4,8 @@
 
 Install dependencies & start:
 
+    nvm use 15
+
     npm install
     npm run dev
 
