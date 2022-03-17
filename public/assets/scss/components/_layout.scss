@@ -291,7 +291,7 @@ main {
             &:hover {
                 color: $color-primary;
             }
-            &:first-child {
+            &:not(:last-child) {
                 margin-right: .5rem;
                 padding-right: 1rem;
                 border-right: 2px solid $grayscale2;

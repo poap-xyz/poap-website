@@ -1,5 +1,9 @@
 # POAP: Proof of Attendance Protocol Website
 
+## Requirements
+
+node version 15 
+
 ## Setup
 
 Install dependencies & start:
