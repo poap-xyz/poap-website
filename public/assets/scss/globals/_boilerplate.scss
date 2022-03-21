@@ -134,12 +134,12 @@ h1 {
 h2 {
     @include x-rem(font-size, 40px);
     color:$color-primary;
-    font-family: $font-family-narrow;
+    font-family: 'Comfortaa';
     font-weight: $fontWeight-bold; 
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 
     @media (min-width: $bp-mw) {
-        @include x-rem(font-size, 50px);
+        @include x-rem(font-size, 30px);
     }
 }
 
