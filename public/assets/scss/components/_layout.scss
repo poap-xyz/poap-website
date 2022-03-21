@@ -241,7 +241,7 @@ main {
             ;
         padding: 3%;
         @media (min-width: $bp-m) {
-            padding: 15%;
+            padding: 12% 10%;
             grid-template-areas: 
             "title title title"
             "a     b"
@@ -277,15 +277,24 @@ main {
         padding: 3%;
         @media (min-width: $bp-m) {
             align-items: flex-end;        
-            padding: 15%;
+            padding: 12% 10%;
         }
         h4 { 
             color: $color-primary;
+        }
+        @media (max-width: $bp-sw-max) {
+            .social-icons {
+                margin-bottom: .75rem
+            }
         }
 
     }
     .legal {
         margin-top: auto;
+        @media (max-width: $bp-sw-max) {
+            display: flex;
+            flex-direction: column;
+        }
         a {
             color: $grayscale4;
             &:hover {
@@ -294,7 +303,9 @@ main {
             &:not(:last-child) {
                 margin-right: .5rem;
                 padding-right: 1rem;
-                border-right: 2px solid $grayscale2;
+                @media (min-width: $bp-sw) {
+                    border-right: 2px solid $grayscale2;
+                }
             }
         }
     }
