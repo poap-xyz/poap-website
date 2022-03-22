@@ -111,6 +111,12 @@ main {
 				padding:36px 0 96px;
             }
 		}
+        .shields-icon {
+            @media (max-width: $bp-mw-max) {
+				width: 30%;
+            }
+        }
+
         .social-icons {
             padding: 0;
             margin-bottom: 0;
