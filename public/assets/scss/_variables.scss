@@ -33,6 +33,7 @@ $color-fourth:#FFEDF0; //rose
 // Typography  
 $font-family: 'Noway Round', 'Archivo', sans-serif;
 $font-family-narrow: 'Archivo Narrow', sans-serif;
+$font-heading: 'Comfortaa';
  
 $fontWeight-normal: 400;
 $fontWeight-medium: 500;
@@ -57,5 +58,4 @@ $bp-xl: 81.25em; // 1300px
 // Grid
 $grid-gutter: 16px;  
 $grid-gutter-em: 3em; // Changing grid gutter to em causes a compiling error :/
-
 
