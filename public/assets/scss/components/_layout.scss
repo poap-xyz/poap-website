@@ -1,7 +1,7 @@
 /* ================================================================
    Header
    ================================================================ */
-header {
+   header {
     pointer-events: none;
     background-repeat:no-repeat;
     background-size:cover;
@@ -31,6 +31,12 @@ header {
 
     .logo, .toggle-menu, .navigation {
         pointer-events: all;
+    }
+
+    @media (min-width:768px) and (max-width:1000px) {
+        .icontext {
+            display:none;
+        }
     }
 
     &.fixed {
@@ -244,6 +250,7 @@ main {
             "c  d"
             "e  f"
             "g  h"
+            "i  j"
             ;
         padding: 3%;
         @media (min-width: $bp-m) {
@@ -254,6 +261,7 @@ main {
             "c     d"
             "e     f"
             "g     h"
+            "i     j"
             ;
         }
         h4 { 
@@ -274,6 +282,8 @@ main {
         .f { grid-area: f; }
         .g { grid-area: g; }
         .h { grid-area: h; }
+        .i { grid-area: i; }
+        .j { grid-area: j; }
     }
     .join-links {
         grid-area: join-links;
