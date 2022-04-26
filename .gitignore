@@ -74,3 +74,6 @@ dist/
 # VSCode extensions
 .history
 .idea/
+
+# Mac specific
+**/.DS_Store
