@@ -342,7 +342,7 @@ main {
     transition: .3s;
     cursor: pointer;
     user-select: none;
-    display: inline-block;
+    display: block;
     border: none;
     width: 44px;
     height: 44px;
@@ -511,7 +511,76 @@ main {
             }
         }
     }
+
+
+    .has-dropdown { 
+        position: relative;
+
+        &.active {
+            .dropdown-submenu {
+                display: block;
+            }
+        }
+        @media (max-width: $bp-m) {
+            .dropbtn, .dropdown-link {
+                display: none;
+            }
+        }
+        @media (min-width: $bp-m) {
+            li {
+                margin: 0 10px;
+            }
+        }
+
+    }
+
+    .dropdown-submenu {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 125px;
+        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+        z-index: 1;
+        right: 0;
+    
+        @media (max-width: $bp-m) {
+            display: block;
+            position: relative;
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
+
+            a.sub-item {
+                padding: 0;
+            }
+        }
+    
+        @media (min-width: $bp-m) {
+            position: absolute;
+            display: none;
+
+            li {
+                &:not(:last-of-type) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    
+        .sub-item {
+            text-decoration: none;
+            display: inline;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+
+    }
 }
+
+  
+
 
 @media (max-width: $bp-sw-max) {
 
@@ -524,11 +593,10 @@ main {
             background-color: #E9EDF5;
             left: -100%;
             bottom: 0;
-            width: 100%; //transition
+            width: 100%;
             -webkit-overflow-scrolling: touch;
-            -webkit-transition: left ease .5s;
             transition: left .5s ease-in-out;
-            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
             position:absolute;
             z-index:100;
             top:0;
@@ -605,3 +673,4 @@ a.disabled {
     pointer-events: none;
     color: #ccc;
 }
+  

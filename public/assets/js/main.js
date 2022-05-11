@@ -37,6 +37,19 @@ import bootstrap from 'bootstrap'
     }
   });
 
+  $('nav ul li').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+      })
+    
+
+  // $('.navbar').on('mouseenter focusin', '.navbar-item.has-dropdown', function (e) {
+  //   $(this)
+  //       .parent('.navbar-item')
+  //       .addClass('active')
+  //       .siblings('.navbar-item')
+  //       .removeClass('active')
+  // });
 
   /* Scroll to section */
   // NOT WORKING FOR NORMAL LINKS!
