@@ -244,6 +244,8 @@ main {
             "c  d"
             "e  f"
             "g  h"
+            "i  j"
+            "k  l"
             ;
         padding: 3%;
         @media (min-width: $bp-m) {
@@ -254,11 +256,14 @@ main {
             "c     d"
             "e     f"
             "g     h"
+            "i     j"
+            "k     l"
             ;
         }
         h4 { 
             grid-area: title;
             color: $color-primary;
+            margin-bottom: 5px;
         }
         a {
             color: $grayscale4;
@@ -288,10 +293,8 @@ main {
         h4 { 
             color: $color-primary;
         }
-        @media (max-width: $bp-sw-max) {
-            .social-icons {
-                margin-bottom: .75rem
-            }
+        .social-icons {
+            margin: .75rem 0;
         }
 
     }
@@ -301,6 +304,9 @@ main {
             display: flex;
             flex-direction: column;
         }
+        @media (min-width: $bp-m) {
+            text-align: right;
+        }
         a {
             color: $grayscale4;
             &:hover {
@@ -309,7 +315,7 @@ main {
             &:not(:last-child) {
                 margin-right: .5rem;
                 padding-right: 1rem;
-                @media (min-width: $bp-sw) {
+                @media (min-width: $bp-m) {
                     border-right: 2px solid $grayscale2;
                 }
             }
