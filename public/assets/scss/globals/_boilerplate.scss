@@ -122,12 +122,12 @@ h5 {
 }
 
 h1 {
-    @include x-rem(font-size, 40px);
+    // @include x-rem(font-size, 40px);
     color:$color-primary;
 
-    @media (min-width: $bp-mw) {
-        @include x-rem(font-size, 50px);
-    }
+    // @media (min-width: $bp-m) {
+    //     @include x-rem(font-size, 40px);
+    // }
 
 }
 
@@ -175,7 +175,7 @@ h5 {
     font-weight: $fontWeight-normal; 
 
     @media (min-width: $bp-mw) {
-        @include x-rem(font-size, 40px);
+        @include x-rem(font-size, 24px);
     }
 }
 
