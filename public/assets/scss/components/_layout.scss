@@ -628,16 +628,14 @@ main {
 .fix-element {
     padding-top: 0;
     -webkit-overflow-scrolling: touch;
-    -webkit-transition: top .5s ease-in-out;
     transition: top .5s ease-in-out;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     &.fixed {
         padding-top: 200px;
         -webkit-overflow-scrolling: touch;
-        -webkit-transition: top .5s ease-in-out;
         transition: top .5s ease-in-out;
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 }
 
