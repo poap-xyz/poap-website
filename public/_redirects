@@ -1,4 +1,4 @@
-/form         https://airtable.com/shrqfuq3GJgEZ571w         302
+/form         https://docs.google.com/forms/d/e/1FAIpQLSccs0z4fk07q1Eqc9SCzXkb9T50IY9v0vRkDvJu3GGKPIFG5w/viewform         302
 /admin        https://app.poap.xyz/admin                  302
 /join         https://testflight.apple.com/join/oZiOSCuK  302
 /onepager     https://res.cloudinary.com/dbiqkiypz/image/upload/v1565913513/poap_onepager_june19_vz54rg 302
@@ -9,5 +9,5 @@
 /discord      https://discord.gg/fcxW4yR                  302
 /claim/:id    https://app.poap.xyz/claim/:id              301
 /claim        https://app.poap.xyz/claim                  301
-/faqs         /faqs.html                                  302
+/faqs         https://intercom.help/poap/en/              301
 /*            /index.html                                 200
