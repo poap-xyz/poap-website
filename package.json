@@ -1,8 +1,8 @@
 {
   "scripts": {
     "deploy": "firebase deploy",
-    "dev": "echo 'Use http://localhost:1234/index.html in dev'; parcel public/index.html public/faqs.html",
-    "build": "node prebuild.js && parcel build public/index.html public/faqs.html && node postbuild.js"
+    "dev": "echo 'Use http://localhost:1234/index.html in dev'; parcel public/index.html",
+    "build": "node prebuild.js && parcel build public/index.html && node postbuild.js"
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
