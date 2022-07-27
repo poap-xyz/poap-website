@@ -486,7 +486,7 @@ main {
             padding: 0;
 
             @media (min-width: $bp-m) {
-                float:left;
+                float: left;
                 margin: 0 20px 0 20px;
             }
         }
@@ -566,6 +566,7 @@ main {
             display: none;
 
             li {
+                float: none;
                 &:not(:last-of-type) {
                     margin-bottom: 10px;
                 }
