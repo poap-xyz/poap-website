@@ -3,11 +3,17 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import bootstrap from 'bootstrap'
 
+
+
 (function ($, talonUtil) {
 
   //Sticky header
   var header = $("header");
   var fix = $(".fix-element")
+
+  var check  = function() {
+    return $(window).width() >=768
+  }
 
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -37,33 +43,37 @@ import bootstrap from 'bootstrap'
     }
   });
 
+  $(document).on('click', function(event){
+    var $trigger = $('.has-dropdown');
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $('.has-dropdown').removeClass('active');
+    }            
+  });
+
   $('nav ul li').click(function(){
+    if (check()) {
+      $(this).siblings().removeClass('active');
+      $(this).toggleClass('active');
+      $(this).focus();
+    }
+  })
+
+  $('nav ul li').hover(
+    function () {
+      if (check()) {
         $(this).siblings().removeClass('active');
         $(this).toggleClass('active');
-      })
-    
+      }
+    }, 
 
-  // $('.navbar').on('mouseenter focusin', '.navbar-item.has-dropdown', function (e) {
-  //   $(this)
-  //       .parent('.navbar-item')
-  //       .addClass('active')
-  //       .siblings('.navbar-item')
-  //       .removeClass('active')
-  // });
-
-  /* Scroll to section */
-  // NOT WORKING FOR NORMAL LINKS!
-  // $(".anchor").click(function (e) {
-  //   e.preventDefault();
-  //   var anchor = $(this).attr('href');
-
-  //   $('html, body').animate({
-  //     scrollTop: $(anchor).offset().top - 150
-  //   }, 500);
-  //   $('body').removeClass('menu-active');
-  //   $('.menu-hamburger').removeClass('close');
-  // });
-
+    function () {
+      if (check()) {
+        $(this).siblings().removeClass('active');
+        
+      }
+    }
+  );
+  
   AOS.init({ once: true });
 
 

@@ -486,7 +486,7 @@ main {
             padding: 0;
 
             @media (min-width: $bp-m) {
-                float:left;
+                float: left;
                 margin: 0 20px 0 20px;
             }
         }
@@ -544,7 +544,7 @@ main {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 125px;
+        min-width: 150px;
         box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
         z-index: 1;
         right: 0;
@@ -566,6 +566,7 @@ main {
             display: none;
 
             li {
+                float: none;
                 &:not(:last-of-type) {
                     margin-bottom: 10px;
                 }
