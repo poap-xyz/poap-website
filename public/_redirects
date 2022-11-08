@@ -9,5 +9,5 @@
 /discord      https://discord.gg/fcxW4yR                  302
 /claim/:id    https://app.poap.xyz/claim/:id              301
 /claim        https://app.poap.xyz/claim                  301
-/faqs         https://intercom.help/poap/en/              301
+/faqs         https://poap.zendesk.com/hc/en-us              301
 /*            /index.html                                 200
