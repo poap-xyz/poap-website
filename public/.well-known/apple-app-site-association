@@ -11,10 +11,20 @@
           {
             "/": "/claim/*",
             "comment": "Matches any URL that starts with /claim/"
+          },
+          {
+            "/": "/scan/*",
+            "comment": "Matches any URL that starts with /scan/"
+          },
+          {
+            "/": "/token/*",
+            "comment": "Matches any URL that starts with /token/"
           }
         ],
         "paths": [
-          "/claim/*"
+          "/claim/*",
+          "/scan/*",
+          "/token/*"
         ]
       }
     ]
