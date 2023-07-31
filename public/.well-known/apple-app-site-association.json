@@ -4,27 +4,16 @@
     "details": [
       {
         "appIDs": [
-          "BNJH2R62BZ.xyz.poap.app.mobile"
+          "F8BLSQ4DP3.xyz.poap.app.mobile"
         ],
-        "appID": "BNJH2R62BZ.xyz.poap.app.mobile",
+        "appID": "F8BLSQ4DP3.xyz.poap.app.mobile",
         "components": [
           {
-            "/": "/claim/*",
-            "comment": "Matches any URL that starts with /claim/"
-          },
-          {
-            "/": "/scan/*",
-            "comment": "Matches any URL that starts with /scan/"
-          },
-          {
-            "/": "/token/*",
-            "comment": "Matches any URL that starts with /token/"
+            "/": "/*"
           }
         ],
         "paths": [
-          "/claim/*",
-          "/scan/*",
-          "/token/*"
+          "/*"
         ]
       }
     ]
