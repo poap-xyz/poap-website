@@ -1,3 +1,5 @@
+This repository is no longer maintain
+
 # POAP: Proof of Attendance Protocol Website
 
 ## Setup
